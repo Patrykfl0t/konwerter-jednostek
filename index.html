@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Konwenter</title>
+    <title>Konwenter Jednostek</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
     <header>
-        <h1>Konwenter jednostek dlugosci</h1>
+        <h1>Konwenter jednostek</h1>
     </header>
 
 
     <script>
         const jednostka = (prompt("wprowadz na jaka jednostke chcesz zmieni mil/km"))
-        const num = parseInt(prompt("wprowadz liczbe"))
+        const num = parseInt(prompt("wprowadz liczbe mil/km"))
 
         switch (jednostka) { 
         case "km": 
             document.write(num + " przeliczajac mile na km to: " + (num * 1.61)); 
             break; 
         case "mil":
-            document.write(num + " przeliczajac km na mile to: " + (num * (62/100))); 
+            document.write(num + " przeliczajac km na mile to: " + (num * (62/100)); 
             break; 
         default: 
             document.write("nie znam takiej jednostki"); 
