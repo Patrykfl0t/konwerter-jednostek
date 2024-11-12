@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konwenter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Konwenter jednostek dlugosci</h1>
+    </header>
+
+
+    <script>
+        const jednostka = (prompt("wprowadz na jaka jednostke chcesz zmieni mil/km"))
+        const num = parseInt(prompt("wprowadz liczbe"))
+
+        switch (jednostka) { 
+        case "km": 
+            document.write(num + " przeliczajac mile na km to: " + (num * 1.61)); 
+            break; 
+        case "mil":
+            document.write(num + " przeliczajac km na mile to: " + (num * (62/100))); 
+            break; 
+        default: 
+            document.write("nie znam takiej jednostki"); 
+            break;
+        }
+    </script>
+ 
+
+    <footer>
+        <p>&copy; Patryk 2024</p>
+    </footer>
+
+</body>
+</html>
